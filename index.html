@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="refresh" content="0; url=https://linktr.ee/venith">
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="summary">
 <meta property="og:site_name" content="The Venith Shop">
 <meta property="og:title" content="Powered by The Venith Network!">
@@ -10,9 +11,95 @@
 <meta property="og:image" content="/media/card.png">
 <meta property="og:image:alt" content="The Venith Shop">
 <meta property="og:url" content="http://shop.venith.net">
-<meta name="viewport" content="width=device-width">
 <meta name="author" content="MattTheTekie + Skylar">
 <meta name="description" content="Welcome! We sell all sorts of gadgets, consoles, phones, and devices for cheap.">
 <link rel="shortcut icon" href="/media/card.ico">
 </head>
+<style>
+  /* Resetting default margin and padding */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Press Start 2P', monospace; /* Use Press Start 2P font with monospace fallback */
+    overflow: hidden;
+  }
+
+  /* Background */
+  body {
+    background-color: #23272A; /* Background color */
+  }
+
+  /* Banner container */
+  #banner {
+    width: 60%; /* Adjust banner width */
+    height: 60%; /* Adjust banner height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23272A; /* Background color */
+    color: white; /* Text color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Loading bar */
+  #loading-bar {
+    width: 80%;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  /* Progress indicator */
+  #progress {
+    width: 0%;
+    height: 100%;
+    background-color: #4CAF50;
+    animation: progressAnimation 3s infinite; /* Animation for progress */
+  }
+
+  /* Text */
+  p {
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal; /* Normal weight */
+  }
+
+  /* Keyframes for progress animation */
+  @keyframes progressAnimation {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+
+  /* Import Press Start 2P font */
+  @font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.gstatic.com/s/pressstart2p/v15/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2') format('woff2'); /* WOFF2 format */
+    font-weight: normal;
+    font-style: normal;
+  }
+</style>
+</head>
+<body>
+<div id="banner">
+  <p>Please wait while the storefront loads.</p>
+  <div id="loading-bar">
+    <div id="progress"></div>
+  </div>
+</div>
+
+<script>
+  // Redirect after loading
+  setTimeout(() => {
+    window.location.href = "https://linktr.ee/venith";
+  }, 3000); // Redirect after 3 seconds (adjust as needed)
+</script>
+</body>
 </html>
